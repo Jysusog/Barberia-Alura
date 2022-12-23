@@ -1,0 +1,47 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Roboto';
+}
+/*Barra de navegacion*/
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.tituloPrincipal{
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/*Barra de navegacion*/

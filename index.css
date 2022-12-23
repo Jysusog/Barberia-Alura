@@ -1,0 +1,89 @@
+body{
+    font-family: 'Roboto';
+}
+h1 img{
+    width: auto;
+}
+/*Barra de navegacion*/
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+.tituloPrincipal{
+    position: absolute;
+    top: 110px;
+    left: 180px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/*Barra de navegacion*/
+.tituloPrincipal{
+    padding-left: 1em;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 1em;
+}
+img{
+    width: 100%;
+}
+p{
+    text-align: center;
+}
+#mision{
+    font-size: 20px;
+}
+p em strong{
+    color: red;
+}
+#diferenciales{
+    width: 100%;
+    margin: 1em;
+}
+.diferenciales{
+    background-color: white;
+    padding: 2em;
+}
+.tituloCentralizado{
+    text-align: center;
+}
+.items{
+    font-style: italic;
+}
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    
+}
+.imagenDiferenciales{
+    width: 50%;
+
+}
