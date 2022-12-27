@@ -4,12 +4,12 @@
     padding: 0;
 }
 body{
-    background-color: antiquewhite;
+    background-color: white;
     font-family: 'Roboto';
 }
 /*Barra de navegacion*/
 header{
-    background-color: #bbbbbb;
+    background-color:  #bbbbbb;
     padding: 20px 0;
 }
 .caja{
@@ -22,7 +22,7 @@ header{
     top: 110px;
     left: 180px;
     text-transform: uppercase;
-    color: white;
+    color:beige;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
@@ -45,3 +45,51 @@ nav a{
 }
 
 /*Barra de navegacion*/
+
+/*Main*/
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    */
+    border: 2px solid #000000;
+    border-radius: 10px 40px 10px 40px;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+
+}
+.producto-descripcion{
+    font-size: 18px;
+    padding: 1em;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+    
+}
+.productos li:hover{
+    border-color: aquamarine;
+    
+}
+.productos h2:hover{
+    font-size: 35px;
+}
+/*Main*/
