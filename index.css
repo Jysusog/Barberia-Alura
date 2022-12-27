@@ -4,9 +4,18 @@ body{
 h1 img{
     width: auto;
 }
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Roboto';
+}
 /*Barra de navegacion*/
 header{
-    background-color: #bbbbbb;
+    background-color:  #bbbbbb;
     padding: 20px 0;
 }
 .caja{
@@ -19,7 +28,7 @@ header{
     top: 110px;
     left: 180px;
     text-transform: uppercase;
-    color: white;
+    color:beige;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
@@ -40,7 +49,10 @@ nav a{
     font-size: 22px;
     text-decoration: none;
 }
-
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
+}
 /*Barra de navegacion*/
 .tituloPrincipal{
     padding-left: 1em;

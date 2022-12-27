@@ -43,7 +43,10 @@ nav a{
     font-size: 22px;
     text-decoration: none;
 }
-
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
+}
 /*Barra de navegacion*/
 
 /*Main*/
@@ -86,10 +89,15 @@ nav a{
     
 }
 .productos li:hover{
-    border-color: aquamarine;
+    border-color: darkorange;
+    
+}
+.productos li:active{
+    border-color: green;
     
 }
 .productos h2:hover{
     font-size: 35px;
 }
+
 /*Main*/
