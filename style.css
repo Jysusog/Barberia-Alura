@@ -49,6 +49,24 @@ nav a:hover{
 }
 /*Barra de navegacion*/
 
+/*Footer*/
+footer{
+    padding: 2.5em;
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    
+}
+.copyright{
+    margin: 1.5em;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+/*Footer*/
+
+/*-------------------------------------------*/
+
+/*Producto*/
 /*Main*/
 .productos{
     width: 940px;
@@ -73,7 +91,7 @@ nav a:hover{
     border-radius: 10px 40px 10px 40px;
 }
 .productos h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     
 
@@ -89,15 +107,48 @@ nav a:hover{
     
 }
 .productos li:hover{
-    border-color: darkorange;
-    
+    border-color: #c78c19;
+    font-size: 33px;
 }
 .productos li:active{
-    border-color: green;
+    border-color: #088c19;
     
 }
-.productos h2:hover{
-    font-size: 35px;
+.productos li:hover h2{
+    font-size: 30px;
 }
 
 /*Main*/
+/*Producto*/
+
+/*-------------------------------------------*/
+
+/*Contacto*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+
+form label,form p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 1em 2em;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0; 
+}
+
+
+
+/*Contacto*/
+
+/*-------------------------------------------*/
