@@ -4,16 +4,20 @@
     padding: 0;
 }
 body{
-    background-color: white;
     font-family: 'Roboto';
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: linear-gradient(to right, #FFFFFF, beige); 
+
 }
 /*Barra de navegacion*/
 header{
-    background-color:  #bbbbbb;
     padding: 20px 0;
+    background: url(imagenes/bg.jpg);
+    font-family: 'Montserrat', sans-serif;
 }
 .caja{
     width: 940px;
+    height: 250px;
     position: relative;
     margin: 0 auto;
 }
@@ -24,7 +28,7 @@ header{
     text-transform: uppercase;
     color:beige;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 30px;
     text-decoration: none;
 }
 nav{
@@ -33,19 +37,20 @@ nav{
     right: 0;
 }
 nav li{
+    
     display: inline;
     margin: 0 0 0 15px;
 }
 nav a{
     text-transform: uppercase;
-    color: black;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    color: white;
+    transition: 1s all;
 }
 nav a:hover{
-    color: #c78c19;
-    text-decoration:underline;
+    text-shadow: 3px 3px 10px cornsilk;
 }
 /*Barra de navegacion*/
 
@@ -66,6 +71,117 @@ footer{
 
 /*-------------------------------------------*/
 
+/*Index*/
+
+.banner{
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 2em;
+}
+
+.principal{
+    
+    padding: 3em;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.titulo-principal::before,.titulo-principal::after{
+content: "'";
+}
+.utensilios{
+    /*calc(40% - (230px));*/
+    width: 150px;
+    margin: 5px 20px 20px 0;
+    float: left;
+    border-radius: 10px;
+    transition: 1s all;
+}
+.utensilios:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.mapa {
+    padding: 3em 0;
+    
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-style: italic;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.diferenciales{
+    padding: 3em;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+    padding: 1em;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    margin-top: 2.5em;
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content: "-";
+}
+.items:first-child{
+    font-weight: bold;
+}
+.imagen-diferenciales{
+    border-radius: 10px;
+    width: 60%;
+    vertical-align: top;
+    transition: 1s all;
+    box-shadow: 10px 10px 30px 5px black ;
+}
+.imagen-diferenciales:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+}
+
+.video{
+    width: 800px;
+    height: 450px;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+
+
+
+/*Index*/
+
+/*-------------------------------------------*/
+
 /*Producto*/
 /*Main*/
 .productos{
@@ -73,7 +189,11 @@ footer{
     margin: 0 auto;
     padding: 50px;
 }
-
+.productos img{
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 .productos li{
     display: inline-block;
     text-align: center;
@@ -89,6 +209,7 @@ footer{
     */
     border: 2px solid #000000;
     border-radius: 10px 40px 10px 40px;
+    transition: 1s transform;
 }
 .productos h2{
     font-size: 25px;
@@ -108,15 +229,19 @@ footer{
 }
 .productos li:hover{
     border-color: #c78c19;
-    font-size: 33px;
+    transform: scale(1.1);
+    cursor: pointer;
+    /*font-size: 33px;*/
 }
 .productos li:active{
     border-color: #088c19;
     
 }
+/*
 .productos li:hover h2{
     font-size: 30px;
 }
+*/
 
 /*Main*/
 /*Producto*/
@@ -124,7 +249,7 @@ footer{
 /*-------------------------------------------*/
 
 /*Contacto*/
-main{
+.formulario{
     width: 940px;
     margin: 0 auto;
 }
@@ -132,23 +257,107 @@ form{
     margin: 40px 0;
 }
 
-form label,form p{
+form label,form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 .input-padron{
+    font-family: 'Roboto';
     display: block;
     margin: 0 0 20px 0;
-    padding: 1em 2em;
+    padding: .5em .5em;
     width: 50%;
 }
-.checkbox{
-    margin: 20px 0; 
+#contactado label{
+    cursor: pointer;
 }
+#selector-horario select{
+    cursor: pointer;
+}
+.checkbox{
+    margin: 20px 0;
+    cursor: pointer;
+}
+#boton-enviar{
+    width: 40%;
+    padding: .5em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background: #a67334;
+    border:none;
+    border-radius: .5em;
+    transition: 1.5s all;
+    cursor: pointer;
+}
+#boton-enviar:hover{
+    background: #c6733d;
+    transform: scale(1.1);
+}
+#tabla-horario{
+    margin: 40px 40px;
+}
+#tabla-horario thead{
+    background:#555555;
+    color: white;
+    font-weight: bold;
 
-
+}
+#tabla-horario td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+#tabla-horario #titulo{
+    background: #c6733d;
+}
 
 /*Contacto*/
 
 /*-------------------------------------------*/
+
+/*Responsive para celular.*/
+@media screen and (max-width:480px){
+    /*index*/
+    .caja{
+        width: auto;
+        height: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    .tituloPrincipal{
+        position: static;
+        margin-bottom: 1em;
+    }
+    nav{
+        position: static;
+    }
+    nav li{
+        vertical-align: auto;
+        display:inline;
+        margin: 0 0 0 auto;
+    }
+    nav a{
+        font-size: auto;
+    }
+    .principal, .mapa-contenido, .contenido-diferenciales , .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .video{
+        width: auto;
+        height: auto;
+    }
+    /*index*/
+    /*-------------------------------------------*/
+    /*productos*/
+    /*productos*/
+    /*contacto*/
+    /*contacto*/
+}
+
+/*Responsive para celular.*/

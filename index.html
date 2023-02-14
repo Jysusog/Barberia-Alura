@@ -2,16 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="imagenes/Logo-barberia.png" type="image/x-icon">
     <title>Barberia Alura.</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style-home.css">
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="caja">
-            <h1><img src="imagenes/logo.png" alt="Logo."></h1>
+            <h1><img src="imagenes/logo-blanco.png" alt="Logo."></h1>
             <h1 class="tituloPrincipal">Barberia Alura</h1>
         <nav>
             <ul class="navegacion" >
@@ -22,34 +24,49 @@
         </nav>
         </div>
     </header>
-
-    <img id="banner" src="imagenes/banner.jpg">
-    <div class="principal">
-        <h2 class="tituloCentralizado">Sobre la Barbería Alura</h2>
+    <img class="banner" src="imagenes/banner.jpg">
+    <main>
+        <section class="principal">
+        <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+        <img src="imagenes/utensilios.jpg" alt="Utensilios." class="utensilios">
         <p>Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
 
         <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
 
-        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agil</p>
-    </div>
-    <div class="diferenciales">
-        <h3 class="tituloCentralizado">Diferenciales:</h3>
-        <ul>
-            <li class="items">Atencion personalizada.</li>
-            <li class="items">Espacio diferenciado.</li>
-            <li class="items">Localizacion.</li>
-            <li class="items">Profesionales calificados.</li>
-        </ul>
-        <img class="imagenDiferenciales" src="imagenes/diferenciales.jpg" >
-    </div>
+        <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agil.</p>
+        </section>
 
-    <div class="divisor">
-        <p class="parrafo">Aqui tenemos un parrafo</p>
-    </div>
-    
+        <section class="mapa">
+            <h3 class="titulo-principal">Nuestra Ubicacion.</h3>
+            <p>Nuestro establecimiento esta en el corazon de la cuidad.</p>
+            <div class="mapa-contenido">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1537.3392086300114!2d-46.63457594650206!3d-23.588926518909823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Education%20and%20Innovation!5e0!3m2!1ses!2smx!4v1672358489868!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </section>
+
+        <section class="diferenciales">
+            <h3 class="titulo-principal">Diferenciales:</h3>
+            <div class="contenido-diferenciales">
+            <ul class="lista-diferenciales">
+                <li class="items">Atencion personalizada.</li>
+                <li class="items">Espacio diferenciado.</li>
+                <li class="items">Localizacion.</li>
+                <li class="items">Profesionales calificados.</li>
+                <li class="items">Puntualidad.</li>
+                <li class="items">Limpieza.</li>
+            </ul><img src="imagenes/diferenciales.jpg" class="imagen-diferenciales">
+            </div>
+        
+        </section>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+
     <footer>
         <img src="imagenes/logo-blanco.png" alt="Logo-blanco">
-        <p class="copyright">&copy Copyright Barberia Alura - 2022.</p>
+        <p class="copyright">@ Copyright Barberia Alura - 2022.</p>
     </footer>
 
 </body>
